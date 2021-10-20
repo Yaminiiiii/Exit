@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float n , sum=0;
+    int a;
+    while(true)
+    {
+        cout << "enter your number: ";
+        cin >> n;
+        sum += n;
+        cout <<"Weiter?! (yes=1 / exit=0)";
+        cin >>a;
+        if (a == 1)
+            continue;
+        if (a == 0)
+            break;
+    }
+    cout << "SUM: " << sum << endl;
+    return 0;
+}
